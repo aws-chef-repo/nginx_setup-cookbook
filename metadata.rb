@@ -1,10 +1,10 @@
 name 'nginx_setup'
 maintainer 'r-goto'
-maintainer_email 'you@example.com'
+maintainer_email 'r-goto@creationline.com'
 license 'All Rights Reserved'
 description 'Installs/Configures nginx_setup'
 version '1.0.0'
-chef_version '>= 16.0'
+chef_version '>= 17.0'
 depends 'nginx', '~> 11.5.3'
 
 # The `issues_url` points to the location where issues for this cookbook are

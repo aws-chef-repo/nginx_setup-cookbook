@@ -2,9 +2,7 @@
 
 This file is used to list changes made in each version of the nginx_setup cookbook.
 
-## 0.1.0
+## v1.0.0: Default nginx root page
 
-Initial release.
 
-- change 0
-- change 1
+## v2.0.0: Chef logo root page
