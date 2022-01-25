@@ -9,6 +9,7 @@ transport:
 provisioner:
   name: dokken
   chef_version: 17
+  chef_license: accept-no-persist
   chef_output_format: minimal
 
 verifier:
