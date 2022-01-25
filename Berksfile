@@ -1,3 +1,3 @@
 source 'https://supermarket.chef.io'
 metadata
-cookbook 'nginx', '~> 11.5.3'
+cookbook 'nginx', '~> 12.0.10'
