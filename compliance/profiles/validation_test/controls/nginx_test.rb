@@ -29,5 +29,5 @@ describe command('curl -s localhost') do
 end
 
 describe file('/usr/share/nginx/html/chef-progress-logo.png') do
-  it { should_not exist }
+  it { should exist }
 end
