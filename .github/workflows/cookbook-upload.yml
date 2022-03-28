@@ -8,12 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Kitchen Converge
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           kitchen test
-      - name: Kitchen Test
-        run: kitchen verify
       
   Cookbook-Upload:
     runs-on: self-hosted
