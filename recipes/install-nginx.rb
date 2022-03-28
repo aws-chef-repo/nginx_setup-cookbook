@@ -13,6 +13,11 @@ when 'ubuntu'
   nginx_install 'nginx' do
     source 'distro'
   end
+when 'redhat'
+  package 'nginx'
+  service 'nginx' do
+    action [ :start, :enable]
+  end
 end
 
 nginx_service 'nginx' do

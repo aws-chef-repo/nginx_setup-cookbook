@@ -24,3 +24,5 @@ Policyfile.lock.json
 .idea/
 
 .chef/r-goto.pem
+.delivery
+.kitchen
