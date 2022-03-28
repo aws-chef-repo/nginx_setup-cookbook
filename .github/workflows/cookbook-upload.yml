@@ -14,7 +14,7 @@ jobs:
           kitchen test
       - name: Cleanup Kitchen
         if: steps.kitchen-test.outcome == 'failure'
-        run: kitchen destroy
+        run: kitchen destroy && exit 1
       
   Cookbook-Upload:
     runs-on: self-hosted
