@@ -23,15 +23,14 @@ platforms:
 suites:
   - name: nginx-server
     driver:
-      hostname: server
-      tags: { "Name": "RHEL8-TestKitchen" }
+      tags: { "Name": "nginx_setup-TestKitchen" }
     run_list:
       - recipe[nginx_setup::default]
     verifier:
       inspec_tests:
         - compliance/profiles/validation_test
     attributes: { 
-     audit: { reporter: 'audit-enforcer' },
+     audit: { reporter: 'cli' },
       environment: "production"
      }
 
